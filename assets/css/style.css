@@ -47,7 +47,7 @@ body, html {
     left: 0;
     bottom: 0;
     background-image: url("../images/Textures/mochaGrunge.png");
-    border-top: 6px solid darkorange;
+    border-top: 10rem solid rgb(255, 140, 0);
     border-bottom: 6px solid darkorange;
     box-shadow: 4px 4px 20px paleturquoise;
     transform: skewY(11deg);
@@ -56,7 +56,18 @@ body, html {
 /* .diagonalBox:before {
 } */
 
+#portfolioHeader {
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+    border: 1rem groove rgb(139, 151, 151);
+    color: white;
+    background-image: url("../images/Textures/escheresque_ste_@2X.png");
+}
+
 .diagonalContent {
+    position: relative;
     max-width: 50rem;
     margin: 0 auto;
     transform: skewY(-11deg);
