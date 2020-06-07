@@ -61,7 +61,7 @@ body, html {
     max-width: 50rem;
     margin: 0 auto;
     text-align: center;
-    border: 1rem groove rgb(139, 151, 151);
+    border: 1rem groove rgb(159, 165, 165);
     color: white;
     background-image: url("../images/Textures/escheresque_ste_@2X.png");
 }
@@ -78,11 +78,53 @@ body, html {
     box-shadow: 4px 4px 20px black;
     text-align: center;
     margin: 10rem;
-    padding: 5px;
+    padding: 2px;
 
 }
 
-@keyframes opacity {
-    0% {opacity: 0.2;}
-    100% {opacity: 1;}
+.herokuIcon {
+    height: 75px;
+    width: auto;
+    border: 1px 1px dashed black;
+    border-radius: 3px;
+}
+
+.herokuIcon:hover {
+    border: 1px 1px dashed black;
+    box-shadow: 1px 1px 30px rgb(156, 253, 91);
+}
+
+.githubIcon {
+    width: 75px;
+    height: 75px;
+    border: 1px 1px dashed black;
+    border-radius: 50%;
+   
+}
+
+.githubIcon:hover {
+    border: 2px 2px dashed black;
+    box-shadow: 1px 1px 30px rgb(130, 209, 245);
+}
+
+#sprosoImage {
+    display: inline-block;
+    width: 497px;
+    height: 325px;
+    background: transparent url("../images/contentThumbs/sproso1.jpg") no-repeat;
+    background-size: contain;
+}
+
+#sprosoImage:hover {
+    background-image: url("../images/contentThumbs/sproso2B.jpg");
+    width: 497px;
+    height: 325px;
+
+}
+
+#sprosoCard:hover {
+   
+    box-shadow: 4px 4px 20px rgb(35, 38, 243);
+    border: 4px inset darkgoldenrod;
+    border-radius: 0px;
 }
