@@ -13,10 +13,60 @@
     animation-iteration-count: 1; */
 }
 
-body, html {
-    height: 100%;
+html {
+    overflow: hidden;
 }
 
+body {
+    margin: 0;
+    font-size: 26px;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* body, html {
+    height: 100%;
+} */
+
+
+.parallax-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+
+}
+
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("../images/backgrounds/redGarden2.jpg");
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+
+.regular-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    background-image: url("../images/backgrounds/spokane.jpg");
+    z-index: 2;
+    position: relative;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background: #aaa;
+}
 #parallax1 {
     background-image: url("../images/backgrounds/redGarden2.jpg");
 
@@ -38,10 +88,21 @@ body, html {
     padding: 5px;
 }
 
+#portfolioHeader {
+    position: relative;
+    width: 100vw;
+    margin: 0 0 ;
+    text-align: center;
+    border: 1rem groove rgb(159, 165, 165);
+    color: white;
+    background-image: url("../images/Textures/escheresque_ste_@2X.png");
+    z-index: 10;
+}
+
 .diagonalBox {
     /* position: relative; */
     position: absolute;
-    height: 222%;
+    /* height: 222%; */
     top: 90vh;
     right: 0;
     left: 0;
@@ -53,24 +114,17 @@ body, html {
     transform: skewY(11deg);
 }
 
-/* .diagonalBox:before {
-} */
-
-#portfolioHeader {
-    position: relative;
-    max-width: 50rem;
-    margin: 0 auto;
-    text-align: center;
-    border: 1rem groove rgb(159, 165, 165);
-    color: white;
-    background-image: url("../images/Textures/escheresque_ste_@2X.png");
+.contentBackground {
+    background-image: url("../images/Textures/mochaGrunge.png");
+    
+    width: 100vw;
 }
 
 .diagonalContent {
     position: relative;
     max-width: 50rem;
     margin: 0 auto;
-    transform: skewY(-11deg);
+    /* transform: skewY(-11deg); */
     text-align: center;
     border: 4px solid darkorange;
     border-radius: 3px;
