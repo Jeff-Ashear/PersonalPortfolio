@@ -38,9 +38,17 @@ body {
     background-image: url("../images/backgrounds/redGarden2.jpg");
 }
 
+#aboutBackground::before {
+    background-image: url("../images/backgrounds/Tower\ two.jpg");
+}
+
+#contactBackground::before {
+    background-image: url("../images/backgrounds/spokane2.jpg");
+}
+
 .regularWrapper {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     /* padding-top: 20vh; */
     background-image: url("../images/Textures/mochaGrunge.png");
     z-index: 2;
@@ -57,7 +65,7 @@ body {
     padding: 5px;
 }
 
-#portfolioHeader {
+#portfolioHeader, #aboutHeader {
     position: relative;
     width: 100vw;
     margin: 0 0 ;
@@ -110,4 +118,28 @@ body {
 .img-fluid {
     max-width: 90%;
     border: solid 1px darkslategrey;
+}
+
+#techIcons {
+    width: 75px;
+    height: 75px;
+    margin: 2px;
+}
+
+#aboutHeader {
+   padding: 20px;
+}
+
+#portrait {
+    border: ridge 6px darkgoldenrod;
+    border-radius: 35%;
+    margin: 10px;
+}
+
+#aboutMe {
+    padding: 10px;
+}
+
+#contactCard {
+    padding: 10px;
 }
