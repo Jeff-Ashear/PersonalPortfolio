@@ -122,6 +122,10 @@ body {
     border: solid 1px darkslategrey;
 }
 
+.resumeIcon:hover {
+    box-shadow: 1px 1px 30px rgb(130, 209, 245);
+}
+
 #techIcons {
     width: 75px;
     height: 75px;
