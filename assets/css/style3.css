@@ -39,12 +39,37 @@ body {
 }
 
 #aboutBackground::before {
-    background-image: url("../images/backgrounds/Tower\ two.jpg");
+    /* background-image: url("../images/backgrounds/Tower\ two.jpg"); */
 }
 
 #contactBackground::before {
     background-image: url("../images/backgrounds/spokane2.jpg");
 }
+
+.wrapper {
+    width: 100vw;
+    height: 150vh;
+    background: radial-gradient(farthest-corner at 30vw 20vh, #7397a1 1%, #3f2c41 100%);
+}
+
+$s1:"";
+@for $i from 1 through 400 {
+ $s1: $s1 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + " " + random(50)*-0.01rem + #fff;
+ @if $i < 400 {
+     $s1: $s1 + ",";
+ }
+}
+.snow {
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+.layer1 {
+    width: 1.5rem;
+    height: 1.5;
+    filter: blur(1.5px);
+}
+
 
 .regularWrapper {
     width: 100vw;
