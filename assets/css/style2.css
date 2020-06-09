@@ -40,7 +40,9 @@ body {
 
 #aboutBackground::before {
     background-image: url("../images/backgrounds/Tower\ two.jpg");
+
 }
+
 
 #contactBackground::before {
     background-image: url("../images/backgrounds/spokane2.jpg");
