@@ -130,6 +130,9 @@ body {
     background-image: url("../images/Textures/mochaGrunge.png");
     z-index: 2;
     position: relative;
+    border-top: ridge 2px burlywood;
+    border-bottom: ridge 2px burlywood;
+
 }
 
 #greetings {
