@@ -1,3 +1,5 @@
+
+
 html {
     overflow: hidden;
 }
@@ -5,26 +7,71 @@ html {
 body {
     margin: 0;
     /* font-size: 26px; */
+   /* position: relative;*/
     height: 100vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
+    
+    /*transform-style: preserve-3d;*/
     overflow-x: hidden;
     overflow-y: auto;
 }
+.flex-cont {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+}
 
+.body-container {
+    perspective: 1px;
+    height: 100vh;
+    
+    /*transform-style: preserve-3d;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
 .navButtons {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.navButtons > * {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: .5rem;
+    opacity: 0.5;
+    margin: 0px 0px 10px 0px;
+
+}
+
+.navButtons > * > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/*.navButtons {
     position: -webkit-sticky;
-    position: sticky;
+    position: sticky;*
+    position: absolute;
     top: 0;
     width: 40px;
     height: 40px;
     opacity: 0.5;
     z-index: 100;
-    /* border: solid 2px black; */
+    border: solid 2px black; 
     border-radius: 50%;
     margin: 5px;
     margin-bottom: 70px;
-}
+}*/
 
 #homeButton:hover {
     opacity: 1;
