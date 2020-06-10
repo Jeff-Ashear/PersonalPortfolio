@@ -12,6 +12,35 @@ body {
     overflow-y: auto;
 }
 
+.navButtons {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 0.35;
+    z-index: 100;
+    /* border: solid 2px black; */
+    border-radius: 50%;
+    margin: 5px;
+    margin-bottom: 70px;
+}
+
+#homeButton:hover {
+    opacity: 1;
+}
+
+#portfolioButton:hover {
+    opacity: 1;
+}
+
+#aboutButton:hover {
+    opacity: 1;
+}
+
+#contactButton:hover {
+    opacity: 1;
+}
 .parallaxWrapper {
     width: 105vw;
     height: 100vh;
