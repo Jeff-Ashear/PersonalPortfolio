@@ -106,7 +106,7 @@ body {
     /* z-index: 10; */
 }
 
-.portfolioCard {
+.portfolioCard, .portfolioCardInert {
     position: relative;
     max-width: 50rem;
     margin: 0 auto;
