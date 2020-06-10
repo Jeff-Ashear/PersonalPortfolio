@@ -120,6 +120,13 @@ body {
     padding: 2px;
 }
 
+.portfolioCard:hover {
+   
+    box-shadow: 4px 4px 20px rgb(35, 38, 243);
+    border: 4px inset darkgoldenrod;
+    border-radius: 0px;
+}
+
 .herokuIcon {
     height: 75px;
     width: auto;
