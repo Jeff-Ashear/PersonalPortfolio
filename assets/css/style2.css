@@ -238,7 +238,8 @@ body {
 @media only screen and (max-width: 400px) {
     .img-fluid {
         /* width: 90vw; */
-        height: 50vh;
+        height: 350px;
+        width: auto;
     }
     
 
