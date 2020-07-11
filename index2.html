@@ -23,250 +23,552 @@
 
     <link rel="icon" type="image/png" size="16x16" href="assets/images/favicon-16x16.png">
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style2.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html">Jeff Ashear</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="xXxXx">this place <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="xXxXx">this place</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="xXxXx">this place</a>
-                </li>
-            </ul>
+    <div class="flex-cont">
+        <div class="navButtons">
+            <a href="#greetingBackground" title="Welcome!">
+                <img src="./assets/images/icons/home.jpg" class="navButtons" id="homeButton">
+            </a>
+            <a href="#portfolio" title="view my portfolio">
+                <img src="./assets/images/icons/portfolio.jpg" class="navButtons" id="portfolioButton">
+            </a>
+            <a href="#about" title="learn about me">
+                <img src="./assets/images/icons/professional.jpg" class="navButtons" id="aboutButton">
+            </a>
+            <a href="#contact" title="contact me">
+                <img src="./assets/images/icons/contact.jpg" class="navButtons" id="contactButton">
+            </a>
         </div>
-    </nav>
+    </div>
+    <div class="body-container">
 
-    <div id="parallax1">
-        <div class="row d-flex justify-content-center">
-            <div class="col-4 offset-4" id="greetings">
-                <h3>Hello. I'm Jeff Ashear.<br>Full stack web developer, <br> at your service.</h3>
-            </div>
-        </div>
+        <div class="container-fluid">
 
-        <div class="container">
-
-            <div class="row justify-content-center">
-                <div class="diagonalBox col-12">
-                    <div id="portfolioHeader">
-                        <h1>projects</h1>some of my most recent work
+            <div class="parallaxWrapper" id="greetingBackground">
+                <div id="greeting">
+                    <div class="row justify-content-center">
+                        <div class="col-6 offset-3" id="greetings">
+                            <h3>Hello. I'm Jeff Ashear.<br>Full stack web developer, <br> at your service.</h3>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="contentBackground">
-                <div class="row contentBackground">
-                    <!-- sproso card -->
-                    <div class="col-md-6 col-sm-12">
-                        <div id="sprosoCard" class="diagonalContent portfolioCard">
-                            <h2>Sproso</h2>
-                            <div id="sprosoImage" class="row justify-content-center">
-                                <img src="./assets/images/contentThumbs/sproso1.jpg" class="img-fluid">
-                            </div>
-                            <div class="cardText">
-                                <h5>Socially driven, game-ified goal-tracking for staying connected during stay
-                                    at
-                                    home.
-                                </h5>
-                            </div>
-                            <div class="cardLinks">
-                                <a href="https://echo2project2.herokuapp.com/" target="_blank">
-                                    <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
-                                        alt="Deployed Project">
-                                </a>
-                                <a href="https://github.com/Jeff-Ashear/Better-News-App" target="_blank">
-                                    <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
-                                </a>
-                            </div>
-                            <div class="accordion" id="accordionExample">
+            <div class="regularWrapper">
+                <div class="content" id="portfolio">
 
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">
-                                                development role
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul>This project was the work of Team Echo: Chelsea Luttrall,
-                                                Samantha
-                                                Coke,
-                                                Destiny Clarke, Justin Tucker, and myself. As lead developer,
-                                                contributions
-                                                include:
-                                                <li>Original Concept</li>
-                                                <li>UX/UI design</li>
-                                                <li>mySQL db structure</li>
-                                                <li>Transitions</li>
-                                                <li>Authentication</li>
-                                            </ul>
+                    <div class="row justify-content-center">
+                        <div class="diagonalBox col-12">
+                            <div id="portfolioHeader">
+                                <h1>projects</h1>some of my most recent work
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row d-flex justify-content-center">
+                        <!-- Sproso Card  -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolioCard" id="sprosoCard">
+                                <h2>Sproso</h2>
+                                <div id="sprosoImage" class="row justify-content-center">
+                                    <img src="./assets/images/contentThumbs/Sproso2C.jpg" class="img-fluid">
+                                </div>
+                                <div class="cardText">
+                                    <h5>Socially driven, game-ified goal-tracking for staying connected during stay
+                                        at
+                                        home.
+                                    </h5>
+                                </div>
+                                <div class="cardLinks">
+                                    <a href="https://echo2project2.herokuapp.com/" target="_blank"
+                                        title="view deployed demo at https://echo2project2.herokuapp.com/">
+                                        <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
+                                            alt="Deployed Project">
+                                    </a>
+                                    <a href="https://github.com/Jeff-Ashear/Better-News-App" target="_blank"
+                                        title="view repo at https://github.com/Jeff-Ashear/Better-News-App">
+                                        <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
+                                    </a>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                    development role
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div>
+                                                    <p>This project was the work of Team Echo: Aliff Macapinlac, Chelsea
+                                                        Luttrall,
+                                                        Samantha
+                                                        Coke,
+                                                        Destiny Clarke, Justin Tucker, and myself. As lead developer,
+                                                        contributions
+                                                        include:</p><br>
+                                                    <div class="text-center">
+                                                        <p>
+                                                            Original Concept<br>
+                                                            UX/UI design<br>
+                                                            mySQL db structure<br>
+                                                            Transitions<br>
+                                                            Authentication
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Book Search Card -->
-                    <div class="col-md-6 col-sm-12">
-                        <div id="bookSearchCard" class="diagonalContent portfolioCard">
-                            <h2>Google Books Search</h2>
-                            <div id="bookSearchImage" class="row justify-content-center">
-                                <img src="assets/images/contentThumbs/bookSearch.jpg" class="img-fluid">
-                            </div>
-                            <div class="cardText">
-                                <h5>Full stack MERN app which uses the Google Books api to seach relevant info
-                                    on
-                                    books, and
-                                    save them to a database.
-                                </h5>
-                            </div>
-                            <div class="cardLinks">
-                                <a href="https://googlebooksapiapp.herokuapp.com/" target="_blank">
-                                    <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
-                                        alt="Deployed Project">
-                                </a>
-                                <a href="https://github.com/Jeff-Ashear/GoogleBooksSearchApp" target="_blank">
-                                    <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
-                                </a>
-                            </div>
-                            <p>solo project</p>
-                        </div>
-                    </div>
-                </div>
+                        <!-- Book Search Card -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolioCard" id="bookSearchCard">
+                                <h2>Google Books Search</h2>
+                                <div id="bookSearchImage" class="row justify-content-center">
+                                    <img src="assets/images/contentThumbs/bookSearch.jpg" class="img-fluid">
+                                </div>
+                                <div class="cardText">
+                                    <h5>Full stack MERN app which uses the Google Books api to seach relevant info
+                                        on
+                                        books, and
+                                        save them to a database.
+                                    </h5>
+                                </div>
+                                <div class="cardLinks">
+                                    <a href="https://googlebooksapisearchapp.herokuapp.com/" target="_blank"
+                                        title="view deployed demo at https://googlebooksapiapp.herokuapp.com/">
+                                        <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
+                                            alt="Deployed Project">
+                                    </a>
+                                    <a href="https://github.com/Jeff-Ashear/GoogleBooksSearchApp" target="_blank"
+                                        title="view repo at https://github.com/Jeff-Ashear/GoogleBooksSearchApp">
+                                        <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
+                                    </a>
+                                </div>
 
-                <div class="row">
-                    <!-- gamer.Ready Card -->
-                    <div class="col-md-6 col-sm-12">
-                        <div id="gamerReadyCard" class="diagonalContent portfolioCard">
-                            <h2>gamer.Ready</h2>
-                            <div id="gamerReadyImage" class="row justify-content-center">
-                                <img src="./assets/images/contentThumbs/gamer.Ready2.png" class="img-fluid">
-                            </div>
-                            <div class="cardText">
-                                <h5>Fun, clearly branded UX and clean, responsive UI takes the repetition out of
-                                    game anticipation,
-                                    ratings/lets play searches, and market research.
-                                </h5>
-                            </div>
-                            <div class="cardLinks">
-                                <a href="https://jeff-ashear.github.io/gamer.Ready/" target="_blank">
-                                    <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
-                                        alt="Deployed Project">
-                                </a>
-                                <a href="https://github.com/Jeff-Ashear/gamer.Ready" target="_blank">
-                                    <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
-                                </a>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">
-                                                development role
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul>This project was a group effort, made by Destiny Clarke, Braxton
-                                                Thomas
-                                                Justin Tucker,
-                                                and myself. My contributions include:
-                                                <li>Original Concept</li>
-                                                <li>UX/UI design</li>
-                                                <li>ajax</li>
-                                                <li>Animation Effects</li>
-                                            </ul>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    solo project
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Light weight full stack app allows the user to search GoogleBooks
+                                                    using it's api to see the title, authors, a thumb of the cover, and
+                                                    it's description. The user can then view or purchase the book
+                                                    externally on GoogleBooks in a new tab, or save the book to the
+                                                    database. This app uses:<br><br>
+                                                    MERN stack<br>
+                                                    the GoogleBooks API<br>
+                                                    MongoDB, Mongoose, and MLab<br>
+                                                    Axios APIs<br>
+                                                    React.js<br>
+                                                    React Bootstrap
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- gamer.Ready Card -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolioCard" id="gamerReadyCard">
+                                <h2>gamer.Ready</h2>
+                                <div id="gamerReadyImage" class="row justify-content-center">
+                                    <img src="./assets/images/contentThumbs/gamer.Ready2.png" class="img-fluid">
+                                </div>
+                                <div class="cardText">
+                                    <h5>Fun, clearly branded UX and clean, responsive UI takes the repetition out of
+                                        game anticipation,
+                                        ratings/lets play searches, and market research.
+                                    </h5>
+                                </div>
+                                <div class="cardLinks">
+                                    <a href="https://jeff-ashear.github.io/gamer.Ready/" target="_blank"
+                                        title="view deployed demo at https://jeff-ashear.github.io/gamer.Ready/">
+                                        <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
+                                            alt="Deployed Project">
+                                    </a>
+                                    <a href="https://github.com/Jeff-Ashear/gamer.Ready" target="_blank"
+                                        title="view repo at https://github.com/Jeff-Ashear/gamer.Ready">
+                                        <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
+                                    </a>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    development role
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>This project was a group effort, made by Destiny Clarke, Braxton
+                                                    Thomas Justin Tucker,
+                                                    and myself. My contributions include:<br><br>
+                                                    Original Concept<br>
+                                                    UX/UI design<br>
+                                                    ajax<br>
+                                                    jQuery
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clicky Game Card -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolioCard" id="clickyCard">
+                                <h2>Robots vs Aliens</h2>
+                                <div id="clickyImage" class="row justify-content-center">
+                                    <img src="assets/images/contentThumbs/MemoryGame.jpg" class="img-fluid">
+                                </div>
+                                <div class="cardText">
+                                    <h5>A memory game built with React using state and class.
+                                    </h5>
+                                </div>
+                                <div class="cardLinks">
+                                    <a href="https://jeff-ashear.github.io/clickygame/" target="_blank"
+                                        title="view deployed demo at https://jeff-ashear.github.io/clickygame/">
+                                        <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
+                                            alt="Deployed Project">
+                                    </a>
+                                    <a href="https://github.com/Jeff-Ashear/clickygame" target="_blank"
+                                        title="view repo at https://github.com/Jeff-Ashear/clickygame">
+                                        <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
+                                    </a>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseFour"
+                                                    aria-expanded="false" aria-controls="collapseFour">
+                                                    solo project
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>This app uses React.js to track whether each image has been clicked
+                                                    exactly one time. Each time any image is clicked, their order or
+                                                    appearance is randomized. If any image is clicked twice loss
+                                                    conditions occur. If each image is clicked once, win conditions are
+                                                    met. This app uses:<br><br>
+                                                    React.js<br>
+                                                    Javascript<br>
+                                                    Yarn<br>
+                                                    React Bootstrap
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trivia Game -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolioCard" id="clickyCard">
+                                <h2>90's Music Trivia</h2>
+                                <div id="triviaImage" class="row justify-content-center">
+                                    <img src="assets/images/contentThumbs/AdvancedTrivia1.JPG" class="img-fluid">
+                                </div>
+                                <div class="cardText">
+                                    <h5>Trivia game logic reliant on timers, built with jQuery.
+                                    </h5>
+                                </div>
+                                <div class="cardLinks">
+                                    <a href="https://jeff-ashear.github.io/AdvancedTriviaGame/" target="_blank"
+                                        title="view deployed demo at https://jeff-ashear.github.io/AdvancedTriviaGame/">
+                                        <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
+                                            alt="Deployed Project">
+                                    </a>
+                                    <a href="https://github.com/Jeff-Ashear/AdvancedTriviaGame.git" target="_blank"
+                                        title="view repo at https://github.com/Jeff-Ashear/AdvancedTriviaGame.git">
+                                        <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
+                                    </a>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseFive"
+                                                    aria-expanded="false" aria-controls="collapseFive">
+                                                    solo project
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>This app features dynamic content, feedback, and styling generated by
+                                                    user input as well as timers. This app uses:<br><br>
+                                                    HTML 5<br>
+                                                    CSS 3<br>
+                                                    Keyframe animations<br>
+                                                    Javascript<br>
+                                                    jQuery
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hangman Game -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolioCard" id="clickyCard">
+                                <h2>Hangman Game</h2>
+                                <div id="hangmanImage" class="row justify-content-center">
+                                    <img src="assets/images/contentThumbs/Wordguess.JPG" class="img-fluid">
+                                </div>
+                                <div class="cardText">
+                                    <h5>Hangman game built with Javascript.
+                                    </h5>
+                                </div>
+                                <div class="cardLinks">
+                                    <a href="https://jeff-ashear.github.io/Word-Guess-Game/" target="_blank"
+                                        title="view deployed demo at https://jeff-ashear.github.io/Word-Guess-Game/">
+                                        <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
+                                            alt="Deployed Project">
+                                    </a>
+                                    <a href="https://github.com/Jeff-Ashear/Word-Guess-Game.git" target="_blank"
+                                        title="view repo at https://github.com/Jeff-Ashear/Word-Guess-Game.git">
+                                        <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
+                                    </a>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseSix"
+                                                    aria-expanded="false" aria-controls="collapseSix">
+                                                    solo project
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>This version of hangman looks and filters keyboard entries and then
+                                                    checks to see if the the letter pressed is present in a hidden,
+                                                    randomly selected string. If the letters match, that letter replaces
+                                                    the underscore that was hiding it. It also features a cheatsheet for
+                                                    people who aren't up to speed on climber culture. This app
+                                                    uses:<br><br>
+                                                    HTML 5<br>
+                                                    CSS 3<br>
+                                                    Javascript
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <!-- Clicky Game Card -->
-                    <div class="col-md-6 col-sm-12">
-                        <div id="clickyCard" class="diagonalContent portfolioCard">
-                            <h2>Robots vs Aliens</h2>
-                            <div id="clickyImage" class="row justify-content-center">
-                                <img src="assets/images/contentThumbs/bookSearch.jpg" class="img-fluid">
+                    <!-- Skills -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 portfolioCardInert">
+                            <h3>projects above powered by</h3><br>
+                            <div class="row justify-content-center">
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons" src="./assets/images/icons/htmlLogo.jpg"
+                                        alt="html 5" />
+                                </div>
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons"
+                                        src="./assets/images/icons/cssLogo2jpg.jpg" alt="css 3" />
+                                </div>
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons"
+                                        src="assets/images/icons/BootstrapCropped.png" alt="Bootstrap 4" />
+                                </div>
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons" src="./assets/images/icons/jsLogo.jpg"
+                                        alt="js 5" />
+                                </div>
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons" src="./assets/images/icons/jqueryLogo.jpg"
+                                        alt="jQuery" />
+                                </div>
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons" src="./assets/images/icons/ReactLogo.jpg"
+                                        alt="React" />
+                                </div>
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons" src="assets/images/icons/nodeLogo.jpg"
+                                        alt="node.js" />
+                                </div>
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons" src="assets/images/icons/mySqlLogo.jpg"
+                                        alt="mySQL" />
+                                </div>
+                                <div>
+                                    <img class="img-thumbnail" id="techIcons" src="assets/images/icons/mongodbLogo.jpg"
+                                        alt="MongoDB" />
+                                </div>
+
                             </div>
-                            <div class="cardText">
-                                <h5>A memory game built with React using state.
-                                </h5>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="parallaxWrapper" id="aboutBackground">
+                <div id="container">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+
+            <!-- about me -->
+            <div class="regularWrapper" id="about">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h1 id="aboutHeader">Jeff Ashear</h1>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-sm-12">
+                                <img class="img-fluid" id="portrait"
+                                    src="./assets/images/contentThumbs/portrait2.JPG" />
                             </div>
-                            <div class="cardLinks">
-                                <a href="https://jeff-ashear.github.io/clickygame/" target="_blank">
-                                    <img class="herokuIcon" src="./assets/images/icons/icons8-heroku-100.png"
-                                        alt="Deployed Project">
-                                </a>
-                                <a href="https://github.com/Jeff-Ashear/clickygame" target="_blank">
-                                    <img class="githubIcon" src="./assets/images/icons/github.png" alt="Code Repo">
-                                </a>
+                            <div class="col-md-6 col-sm-12 portfolioCardInert" id="aboutMe">
+                                <p>I help businesses and individuals achieve their UX and web presence goals by
+                                    designing unique, rich, and engaging interfaces powered by an equally clean back end
+                                    as a Full Stack Web Developer. Certificate in Full Stack Web Development from The
+                                    University of Denver. My
+                                    background in the composition of modern concert musics (such as virtual instrument
+                                    design and object-based custom audio tools, sound sculpture, and installations), as
+                                    well as my lifelong interest in building, modifying, and repairing computers lends
+                                    distinctive application to full stack web development. My goal is to bring an
+                                    invaluably powerful and unique creativity to a team that builds beautiful, practical
+                                    applications while expanding my skill set.</p>
+
+                                <hr>
+                                <p>Skills include html, css, Bootstrap, Javascript, jQuery, node.js, React.js, React
+                                    Bootstrap, MongoDB, and mySQL.
+                                    Currently learning Python, Django, and Ruby on Rails.</p>
                             </div>
-                            <p>solo project</p>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
-    </div>
 
-    <!-- <div class="container"> -->
-        <div id="parallax2">
-            <div class="row d-flex justify-content-center">
+            <div class="parallaxWrapper" id="contactBackground">
             </div>
-        </div>
-    </div>
 
-    
-    <!-- <div class="container">
-        <div id="parallax2">
-            <div class="row d-flex justify-content-center">
-                <div class="col-4 offset-4" id="greetings">
-                    <h3>Hello. I'm Jeff Ashear.<br>Full stack web developer, <br> at your service.</h3>
+            <!-- contact me -->
+            <div class="regularWrapper" id="contact">
+                <div class="row text-center" id="portfolioHeader">
+                    <div class="col-12">
+                        <h1 class="contactHeader">reach out</h1>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-sm-12 portfolioCard" id="contactCard">
+                        <h3>303.898.3638</h3>
+                        <h3>kinesthesiac@gmail.com</h3>
+                        <h3>Spokane, WA</h3>
+                        <div class="row justify-content-center">
+                            <a href="https://www.linkedin.com/in/jeff-ashear-877287196/" target="_blank"
+                                title="https://www.linkedin.com/in/jeff-ashear-877287196/">
+                                <img src="./assets/images/icons/linkedin.jpg" class="img-thumbnail resumeIcon"
+                                    id="techIcons" id="linkedinIcon">
+                            </a>
+
+                            <a href="https://github.com/Jeff-Ashear" target="_blank"
+                                title="https://github.com/Jeff-Ashear">
+                                <img src="./assets/images/icons/github.png" class="img-thumbnails githubIcon"
+                                    id="techIcons">
+                            </a>
+
+                            <a href="./assets/resume/resume.pdf" target="_blank" title="view or print my resume">
+                                <img src="./assets/images/icons/resume.jpg" class="img-thumbnails resumeIcon"
+                                    id="techIcons">
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6 col-sm-12 portfolioCard">
+                        <h3>Send me a note:</h3>
+                        <form action="mailto:kinesthesiac@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="formEmailInput">Email address</label>
+                                <input type="email" class="form-control" id="formEmailInput"
+                                    placeholder="name@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formNameInput">Introduce yourself</label>
+                                <input type="text" class="form-control" id="formNameInput" placeholder="Your Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formTextareaInput">Message</label>
+                                <textarea class="form-control" id="formTextareaInput"
+                                    placeholder="What can I do for you?" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
+            <footer class="row text-center">
+                <div class="col-12" id="portfolioHeader">
+                    Copyright 2020 Jeff Ashear
+                </div>
+            </footer>
         </div>
-    </div> -->
 
-
-    <!-- <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="diagonalBox col-12">
-
-            </div>
-        </div>
-    </div> -->
-
-
-    <!-- <header>
-        <h2>Jeff Ashear</h2>
-        
-    </header> -->
+    </div>
 </body>
+<script src="./assets/javascript/mouseEffect.js"></script>
 
 </html>

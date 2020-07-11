@@ -222,9 +222,19 @@ body {
 }
 
 #portrait {
-    border: ridge 6px darkgoldenrod;
+    border: double 6px darkgoldenrod;
     border-radius: 35%;
     margin: 10px;
+    animation: portraitTransition 3s;
+
+}
+
+#portrait:hover{
+    @keyframes portraitTransition {
+       0%{filter: blur(0px);}
+       100%{filter: blur(6px);}
+
+    }
 }
 
 #aboutMe {
